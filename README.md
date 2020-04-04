@@ -1,6 +1,6 @@
 1. Create a terraform project to deploy AKS and ACR on an existing vNet
 
-2. Clone any simple java springboot containerized application from gihub
+2. Clone any simple java springboot containerized application from github
 
 3. Write a helm 3 chart for the java springboot application
 
