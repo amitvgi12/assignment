@@ -1,14 +1,15 @@
+1. Create a terraform project to deploy AKS and ACR on an existing vNet
 
-# Contributing
+2. Clone any simple java springboot containerized application from gihub
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+3. Write a helm 3 chart for the java springboot application
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+4. Create a Build and Release pipelines in azure DevOps to deploy the helm package into the AKS cluster
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+5. Setup ELK for the provisioned AKS cluster using helm charts
+
+Optional:
+
+1. Store application secrets inside Azure key vault and set up flex volume in AKS
+
+2. Extract the Prometheus logs using a log analytics daemon set and ingest the metrics into Azure monitor.
