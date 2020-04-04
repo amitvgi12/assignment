@@ -25,8 +25,8 @@ stages:
         workingDirectory: 1-terraform
         backendType: azurerm
         backendServiceArm: 'Azure SPN'
-        backendAzureRmResourceGroupName: 'AKSTerraform-RG'
-        backendAzureRmStorageAccountName: 'nyuenterraformstate'
+        backendAzureRmResourceGroupName: 'cloud-shell-storage-centralindia'
+        backendAzureRmStorageAccountName: 'csg100320004b1514e2'
         backendAzureRmContainerName: 'tfstate'
         backendAzureRmKey: 'demo.terraform.tfstate'
     - task: charleszipp.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-cli.TerraformCLI@0
@@ -58,8 +58,8 @@ stages:
               workingDirectory: $(Pipeline.Workspace)/terraform_out
               backendType: azurerm
               backendServiceArm: 'Azure SPN'
-              backendAzureRmResourceGroupName: 'AKSTerraform-RG'
-              backendAzureRmStorageAccountName: 'nyuenterraformstate'
+              backendAzureRmResourceGroupName: 'cloud-shell-storage-centralindia'
+              backendAzureRmStorageAccountName: 'csg100320004b1514e2'
               backendAzureRmContainerName: 'tfstate'
               backendAzureRmKey: 'demo.terraform.tfstate'
           - task: charleszipp.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-cli.TerraformCLI@0
