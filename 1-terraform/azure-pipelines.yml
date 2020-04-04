@@ -24,7 +24,7 @@ stages:
         command: init
         workingDirectory: 1-terraform
         backendType: azurerm
-        backendServiceArm: 'Azure SPN'
+        backendServiceArm: 'aksexample'
         backendAzureRmResourceGroupName: 'cloud-shell-storage-centralindia'
         backendAzureRmStorageAccountName: 'csg100320004b1514e2'
         backendAzureRmContainerName: 'tfstate'
@@ -57,7 +57,7 @@ stages:
               command: init
               workingDirectory: $(Pipeline.Workspace)/terraform_out
               backendType: azurerm
-              backendServiceArm: 'Azure SPN'
+              backendServiceArm: 'aksexample'
               backendAzureRmResourceGroupName: 'cloud-shell-storage-centralindia'
               backendAzureRmStorageAccountName: 'csg100320004b1514e2'
               backendAzureRmContainerName: 'tfstate'
@@ -67,7 +67,7 @@ stages:
             inputs:
               command: plan
               workingDirectory: $(Pipeline.Workspace)/terraform_out
-              environmentServiceName: 'Azure SPN'
+              environmentServiceName: 'aksexample'
               secureVarsFile: 'aks_conf.tfvars'
               commandOptions: '-out $(Pipeline.Workspace)/terraform_out/terraform_aks_out'
               terraformVersion: 0.12.6
