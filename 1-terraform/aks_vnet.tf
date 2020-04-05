@@ -19,5 +19,5 @@ resource "azurerm_subnet" "aks_subnet" {
 # resource "azurerm_role_assignment" "aks-vnet-role" {
 #   scope                = azurerm_virtual_network.aks_vnet.id
 #   role_definition_name = "Contributor"
-#   principal_id         = data.azuread_service_principal.spn.id
+#   principal_id         = data.azuread_service_principal.spn.id1
 # }
