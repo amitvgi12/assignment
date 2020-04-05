@@ -46,7 +46,7 @@ variable "agent_pools" {
     {
       name            = "pool1"
       count           = 3
-      vm_size         = "Standard_D1_v2"
+      vm_size         = "Standard_M128"
       os_type         = "Linux"
       os_disk_size_gb = "30"
     }
