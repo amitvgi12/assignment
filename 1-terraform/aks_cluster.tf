@@ -46,8 +46,8 @@ resource "azurerm_kubernetes_cluster" "aks_k2" {
   }
 
   service_principal {
-    client_id     = data.azurerm_key_vault_secret.spn_id1.value
-    client_secret = data.azurerm_key_vault_secret.spn_secret1.value
+    client_id     = data.azurerm_key_vault_secret.spn_id2.value
+    client_secret = data.azurerm_key_vault_secret.spn_secret2.value
   }
 
   tags = {
