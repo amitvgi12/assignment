@@ -20,7 +20,7 @@ resource "azurerm_kubernetes_cluster" "aks_k2" {
       os_type         = pool.value.os_type
       os_disk_size_gb = pool.value.os_disk_size_gb
       type            = "VirtualMachineScaleSets"
-      max_pods        = 100
+      max_pods        = 2
       vnet_subnet_id  = azurerm_subnet.aks_subnet.id
     }
   }
