@@ -8,11 +8,11 @@ data "azurerm_key_vault_secret" "ssh_public_key" {
   key_vault_id = data.azurerm_key_vault.terraform_vault.id
 }
 
-data "azurerm_key_vault_secret" "spn_id" {
+data "azurerm_key_vault_secret" "spn_id1" {
   name         = "spn-id"
   key_vault_id = data.azurerm_key_vault.terraform_vault.id
 }
-data "azurerm_key_vault_secret" "spn_secret" {
+data "azurerm_key_vault_secret" "spn_secret1" {
   name         = "spn-secret"
   key_vault_id = data.azurerm_key_vault.terraform_vault.id
 }
