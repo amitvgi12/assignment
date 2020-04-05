@@ -8,7 +8,7 @@ variable "keyvault_name" {
 
 variable "azure_region" {
   type    = string
-  default = "eastus"
+  default = "centralindia"
 }
 
 #  Resource Group Name
@@ -45,7 +45,7 @@ variable "agent_pools" {
   default = [
     {
       name            = "pool1"
-      count           = 3
+      count           = 1
       vm_size         = "Standard_M128"
       os_type         = "Linux"
       os_disk_size_gb = "30"
